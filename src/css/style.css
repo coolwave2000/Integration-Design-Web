@@ -85,13 +85,58 @@ header ul li a:hover, header ul li a.selected {
 
 #slideshow {
     float: left;
+    position: relative;
     width: 100%;
     height: 320px;
     border-top: 1px solid #8ac1d4;
     border-bottom: 1px solid #8ac1d4;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
     background-color: #14546b;
+}
+
+#slideshow ul#slide {
+    float: left;
+    width: 100%;
+    height: 295px;
+    list-style: none;
+    padding: 0px;
+}
+
+#slideshow ul#slide li {
+    width: 100%;
+    height: 295px;
+    text-align: center;
+    display: none;
+}
+
+#slideshow ul#item {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+
+#slideshow ul#item li {
+    float: left;
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+#slideshow ul#item li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fe9308;
+    cursor: pointer;
+}
+
+#slideshow ul#item li a:hover, #slideshow ul#item li a.select {
+    background-color: #b2b2b3;
+}
+
+#slideshow ul#item li a.select {
+    cursor: default;
 }
 
 #main {
